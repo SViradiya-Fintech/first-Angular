@@ -12,6 +12,7 @@ export class PostsComponent implements OnInit {
   form = new FormGroup({});
   posts: any;
   ngOnInit() {
+    console.log("sdfsd");
     this.postservice.getAll().subscribe(posts => {
       console.log(posts);
       this.posts = posts;

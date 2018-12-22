@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "prod": "first-angular-3e50c",
+    "default": "first-angular-3e50c",
+    "first-angular": "first-angular-3e50c"
+  }
+}

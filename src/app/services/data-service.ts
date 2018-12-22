@@ -1,17 +1,17 @@
-import "rxjs/add/operator/map";
-import { AppErrors } from "./../posts/app-errors";
 import { HttpClient } from "@angular/common/http";
-import { Injectable } from "@angular/core";
-import { Observable } from "rxjs/Observable";
-import "rxjs/add/operator/catch";
 import "rxjs/add/observable/throw";
-
+import "rxjs/add/operator/catch";
+import "rxjs/add/operator/map";
+import { Observable } from "rxjs/Observable";
 import { NotFoundError } from "../posts/not-found-error";
+import { AppErrors } from "./../posts/app-errors";
+
 export class DataService {
   constructor(private http: HttpClient, private url: string) {}
   posts: any;
 
   getAll() {
+    console.log("get all called");
     return this.http
       .get(this.url)
       .map(res => {

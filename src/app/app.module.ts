@@ -24,7 +24,6 @@ import { GithubProfileComponent } from "./github-profile/github-profile.componen
 import { GithubFollowersComponent } from "./github-followers/github-followers.component";
 import { NotFoundComponent } from "./not-found/not-found.component";
 import { AdminComponent } from "./admin/admin.component";
-import { LoginComponent } from "./login/login.component";
 import { NoAccessComponent } from "./no-access/no-access.component";
 
 @NgModule({
@@ -45,7 +44,6 @@ import { NoAccessComponent } from "./no-access/no-access.component";
     GithubFollowersComponent,
     NotFoundComponent,
     AdminComponent,
-    LoginComponent,
     NoAccessComponent
   ],
   imports: [
