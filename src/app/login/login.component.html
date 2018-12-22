@@ -1,6 +1,6 @@
-<form #form="ngForm" class="form-signIn" (ngSubmit)="OnSubmit(#form.value)">
+<form #form="ngForm" class="form-signIn" (ngSubmit)="OnSubmit(form.value)">
   <h2>Login Form</h2>
-  
+
   <div *ngIf="invalidLogin" class="alert alert-danger">Invalid Credentials</div>
   <div class="form-group">
     <label for="txtusername"></label>

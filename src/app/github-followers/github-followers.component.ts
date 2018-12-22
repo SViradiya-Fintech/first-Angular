@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-github-followers',
-  templateUrl: './github-followers.component.html',
-  styleUrls: ['./github-followers.component.css']
+  selector: "app-github-followers",
+  templateUrl: "./github-followers.component.html",
+  styleUrls: ["./github-followers.component.css"]
 })
 export class GithubFollowersComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
