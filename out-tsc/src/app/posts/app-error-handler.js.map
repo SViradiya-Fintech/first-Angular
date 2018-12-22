@@ -1,0 +1,1 @@
+{"version":3,"file":"app-error-handler.js","sourceRoot":"","sources":["../../../../../src/app/posts/app-error-handler.ts"],"names":[],"mappings":"AAGA;IAAA;IAQA,CAAC;IAPC,qCAAW,GAAX,UAAY,KAAK;QACf,IAAI,KAAsB,EAAE;YAC1B,OAAO,CAAC,GAAG,CAAC,kBAAkB,CAAC,CAAC;SACjC;aAAM;YACL,OAAO,CAAC,GAAG,CAAC,WAAW,EAAE,KAAK,CAAC,CAAC;SACjC;IACH,CAAC;IACH,sBAAC;AAAD,CAAC,AARD,IAQC"}

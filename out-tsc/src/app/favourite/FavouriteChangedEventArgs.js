@@ -1,0 +1,1 @@
+//# sourceMappingURL=FavouriteChangedEventArgs.js.map
