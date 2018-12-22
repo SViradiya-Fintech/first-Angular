@@ -1,0 +1,18 @@
+<i class="fa"
+[ngClass]="{
+'fa-star':isFavourite,
+'fa-star-o':!isFavourite
+}"
+[class.fa-star1]="isFavourite" [class.fa-star-o1]="!isFavourite"
+(click)="onClick()" >
+  Change Image: <input type="text" [(ngModel)]="imageSrc" >
+<img [attr.src]="this.imageSrc">
+
+
+<ng-template ngFor [ngForOf]="[1,2,3,4,5,6]" let-item>
+    <div *ngIf="item > 3">
+      {{item}}
+    </div>
+  </ng-template>
+
+

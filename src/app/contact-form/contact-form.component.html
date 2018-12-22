@@ -1,0 +1,42 @@
+<form action="">
+  <div class="form-group">
+    <label for="firstname">First Name</label
+    ><input
+      ngModel
+      required
+      name="firstName"
+      #inputfirstname="ngModel"
+      (change)="OnChange(inputfirstname)"
+      type="text"
+      id="firstname"
+      class="form-control"
+    />
+  </div>
+  <div
+    class="alert alert-danger"
+    *ngIf="inputfirstname.touched && !inputfirstname.valid"
+  >
+    First name is required
+  </div>
+  <div class="form-group">
+    <label for="comment">Comment</label
+    ><textarea
+      ngModel
+      required
+      name="comment"
+      #inputcomment="ngModel"
+      (change)="OnChange(inputcomment)"
+      cols="30"
+      rows="10"
+      id="comment"
+      class="form-control"
+    ></textarea>
+  </div>
+  <div
+  class="alert alert-danger"
+  *ngIf="inputcomment.touched && !inputcomment.valid"
+>
+  Comment is required
+</div>
+  <button class="btn btn-primary">Submit</button>
+</form>

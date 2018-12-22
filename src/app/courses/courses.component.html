@@ -1,0 +1,43 @@
+Table
+<table class="table table-bordered">
+  <tr>
+    <td>1</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td [attr.colspan]="cols">3</td>
+  </tr>
+</table>
+
+<input (keyup)="onEventup_old($event, name.value)" #name />
+<input [(ngModel)]="fname" (keyup)="onEventUpWithTwoBinding()" />
+<select [(ngModel)]="selectedName" (change)="onChangeName()">
+  <option *ngFor="let c of address" value="{{c.id}}">{{ c.name }}</option>
+</select>
+
+<input
+  type="button"
+  value="Click here!"
+  (click)="buttonSave($event, name.value)"
+  class="btn btn-primary"
+  [class.active]="isActive"
+/>
+
+<table class="table table-bordered">
+  <thead>
+    <td>Id</td>
+    <td>Name</td>
+    <td>Price</td>
+    <td>Start Date</td>
+  </thead>
+  <tbody>
+<tr *ngFor="let cu of getCourseWithObject()" >
+  <td>{{cu.Id | number}}</td>
+  <td>{{cu.Name | uppercase}}</td>
+  <td>{{cu.Price | currency:"INR"}}</td>
+  <td>{{cu.StartDate | date: "MMMM dd, yyyy" }}</td>
+
+</tr>
+
+  </tbody>
+</table>

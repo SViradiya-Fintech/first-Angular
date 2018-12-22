@@ -1,0 +1,15 @@
+<form [formGroup]="form">
+<div class="alert alert-danger" *ngIf="form.errors">error</div>
+
+</form>
+<input type="text" (keyup.enter)="AddTopics(t)" #t />
+<ul class="list-group">
+  <li *ngFor="let post of posts" class="list-group-item">
+    {{ post.title }}
+<button class="btn btn-primary"  (click)="UpdateTopic(post)">Update</button>
+<button class="btn btn-primary" (click)="RemovePost(post)">RemovePost
+
+
+</button>
+  </li>
+</ul>

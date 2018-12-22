@@ -1,0 +1,14 @@
+<form>
+  <input type="text" (keyup.enter)="addTopics(topic)" #topic />
+
+  <ul class="list-group">
+    <li
+      *ngFor="let topic of topics.controls"
+      (click)="removeSelectedTopic(topic)"
+      appInputFormat [format]="'uppercase'"
+      class="list-group-item"
+    >
+      {{ topic.value }}
+    </li>
+  </ul>
+</form>

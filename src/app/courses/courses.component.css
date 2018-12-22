@@ -1,0 +1,13 @@
+tr
+{
+    border:solid 4px red;
+}
+td
+{
+    background: chartreuse;
+}
+
+.active{
+
+  background-color: red !important;
+}
