@@ -1,15 +1,15 @@
-import { PostService } from './../services/post.service';
-import { Observable } from 'rxjs/Observable';
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router, ParamMap } from '@angular/router';
-import 'rxjs/add/observable/combineLatest';
-import 'rxjs/add/operator/map';
-import 'rxjs/add/operator/switchMap';
+import { PostService } from "./../services/post.service";
+import { Observable } from "rxjs/Observable";
+import { Component, OnInit } from "@angular/core";
+import { ActivatedRoute, Router, ParamMap } from "@angular/router";
+import "rxjs/add/observable/combineLatest";
+import "rxjs/add/operator/map";
+import "rxjs/add/operator/switchMap";
 
 @Component({
-  selector: 'app-github-profile',
-  templateUrl: './github-profile.component.html',
-  styleUrls: ['./github-profile.component.css']
+  selector: "app-github-profile",
+  templateUrl: "./github-profile.component.html",
+  styleUrls: ["./github-profile.component.css"]
 })
 export class GithubProfileComponent implements OnInit {
 
@@ -18,7 +18,7 @@ export class GithubProfileComponent implements OnInit {
   submit() {
 
     this.route.navigate(["/followers", 2], {
-      queryParams: { page: 1, orderBy: 'desc' }
+      queryParams: { page: 1, orderBy: "desc" }
     });
 
   }
@@ -34,9 +34,9 @@ export class GithubProfileComponent implements OnInit {
     Observable.combineLatest([this.Activeroute.paramMap, this.Activeroute.queryParamMap])
       .map(combined => {
         console.log("asds");
-        let username = combined[0].get("username");
-        let page = combined[1].get("page");
-        //this.service.getAll();
+        const username = combined[0].get("username");
+        const page = combined[1].get("page");
+        // this.service.getAll();
         const data = { username: username, page: page };
         return data;
       })

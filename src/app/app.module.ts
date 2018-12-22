@@ -18,14 +18,14 @@ import { FormArraysExampleComponent } from "./form-arrays-example/form-arrays-ex
 import { PostsComponent } from "./posts/posts.component";
 import { PostService } from "./services/post.service";
 import { CoursesService } from "./services/course.service";
-import { NavBarComponent } from './nav-bar/nav-bar.component';
-import { HomeComponent } from './home/home.component';
-import { GithubProfileComponent } from './github-profile/github-profile.component';
-import { GithubFollowersComponent } from './github-followers/github-followers.component';
-import { NotFoundComponent } from './not-found/not-found.component';
-import { AdminComponent } from './admin/admin.component';
-import { LoginComponent } from './login/login.component';
-import { NoAccessComponent } from './no-access/no-access.component';
+import { NavBarComponent } from "./nav-bar/nav-bar.component";
+import { HomeComponent } from "./home/home.component";
+import { GithubProfileComponent } from "./github-profile/github-profile.component";
+import { GithubFollowersComponent } from "./github-followers/github-followers.component";
+import { NotFoundComponent } from "./not-found/not-found.component";
+import { AdminComponent } from "./admin/admin.component";
+import { LoginComponent } from "./login/login.component";
+import { NoAccessComponent } from "./no-access/no-access.component";
 
 @NgModule({
   declarations: [

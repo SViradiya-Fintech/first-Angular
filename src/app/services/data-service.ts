@@ -7,10 +7,6 @@ import "rxjs/add/operator/catch";
 import "rxjs/add/observable/throw";
 
 import { NotFoundError } from "../posts/not-found-error";
-
-@Injectable({
-  providedIn: "root"
-})
 export class DataService {
   constructor(private http: HttpClient, private url: string) {}
   posts: any;
