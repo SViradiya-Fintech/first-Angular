@@ -25,7 +25,7 @@ import { GithubFollowersComponent } from "./github-followers/github-followers.co
 import { NotFoundComponent } from "./not-found/not-found.component";
 import { AdminComponent } from "./admin/admin.component";
 import { NoAccessComponent } from "./no-access/no-access.component";
-
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,7 +52,8 @@ import { NoAccessComponent } from "./no-access/no-access.component";
     FormsModule,
     AngularFontAwesomeModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [
     CoursesService,

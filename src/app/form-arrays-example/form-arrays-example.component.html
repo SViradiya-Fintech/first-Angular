@@ -3,12 +3,17 @@
 
   <ul class="list-group">
     <li
+      @bounceOutAnimation
       *ngFor="let topic of topics.controls"
       (click)="removeSelectedTopic(topic)"
-      appInputFormat [format]="'uppercase'"
+      appInputFormat
+      [format]="'uppercase'"
       class="list-group-item"
     >
       {{ topic.value }}
     </li>
+  </ul>
+  <ul class="list-group">
+    <li @bounceOutAnimation *ngFor="let c of data" class="list-group-item">{{ c.name }}</li>
   </ul>
 </form>

@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"uri": "gitlens:/first-angular@first-angular/e:/Angular/first-angular?{\"path\":\"/e:/Angular/first-angular\",\"ref\":\"first-angular\",\"repoPath\":\"e:/Angular/first-angular\"}",
+			"name": "first-angular @ first-angular"
+		}
+	],
+	"settings": {
+		"terminal.integrated.cursorBlinking": true
+	}
+}
