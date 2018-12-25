@@ -26,8 +26,24 @@ export let slideAnimation = trigger("slide", [
   transition(":leave", useAnimation(bounceOutAnimation))
 ]);
 
+export let fadeInAnimation = animation(
+  [style({ opacity: 0 }), animate("{{ delay }} {{ easeing }}")],
+  {
+    params: {
+      delay: "2s",
+      easeing: "ease-out"
+    }
+  }
+);
 export let fade = trigger("fade", [
-  state("void", style({ opacity: 0 })),
-  transition(":enter,:leave", animate(2000))
+  transition(
+    ":enter",
+    useAnimation(fadeInAnimation, {
+      params: {
+        delay: "2s",
+        easeing: "ease-out"
+      }
+    })
+  ),
+  transition(":leave", animate(2000))
 ]);
-///////////////////////////////////////////////////////

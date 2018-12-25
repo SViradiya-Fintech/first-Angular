@@ -7,7 +7,11 @@ import {
 } from "@angular/animations";
 import { FormGroup, FormArray, FormControl } from "@angular/forms";
 import { Component, OnInit } from "@angular/core";
-import { slideAnimation, bounceOutAnimation } from "../animations";
+import {
+  slideAnimation,
+  bounceOutAnimation,
+  fadeInAnimation
+} from "../animations";
 
 @Component({
   selector: "app-form-arrays-example",
@@ -17,12 +21,9 @@ import { slideAnimation, bounceOutAnimation } from "../animations";
   animations: [
     trigger("bounceOutAnimation", [
       transition(":enter", [
-        style({
-          opacity: 0,
-          backgroundColor: "green",
-          transform: "translateX(20px)"
-        }),
-        animate(2000)
+        useAnimation(fadeInAnimation, {
+          params: { delay: "500ms", easeing: "ease-in" }
+        })
       ]),
       transition(":leave", [
         style({ backgroundColor: "red" }),
